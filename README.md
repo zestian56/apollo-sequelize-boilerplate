@@ -29,7 +29,7 @@
 - Start database
 - yarn dev or npm dev
 
-##Environment Variables
+## Environment Variables
 
 After you have created a database and a database user, you can fill out the environment variables in the _server/.env_ file.
 
