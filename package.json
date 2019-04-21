@@ -1,0 +1,44 @@
+{
+  "name": "apollo-sequelize-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project for a nodejs apollo, sequelize,babel, mocha and chai aplication.",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir ./dist --source-maps",
+    "serve": "node ./dist/index.js",
+    "test": "./node_modules/.bin/mocha --require @babel/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "apollo-server-express": "^2.4.8",
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.3.2",
+    "graphql-upload": "^8.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.7.1"
+  },
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
+  }
+}
